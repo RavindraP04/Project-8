@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+/* logo */
+.logo img{
+    height: 35px;
+    margin-left: -70px;
+    margin-top: -10px;
+}
+/* signinbutton */
+.navbar-btn button{
+    margin-right: -60px;
+}
+.signin-btn{
+    font-family: "Roboto";
+    background-image: linear-gradient(70deg,#FF8ADC 0%, #8c4fec 51%, #FF8ADC 100%);
+    border: none;
+    color: #fff;
+    padding: 2px 16px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 25px;
+    float: right;
+    cursor: pointer;
+}
+.signin-btn:hover{
+    background-position: right center;
+}
+
+/* navbar */
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+.nav-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.nav-items h5{
+    font-family: "Roboto";
+    margin-right: 50px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #2D327B;
+}
+
+/* menu_icon_for_shorts */
+.hamburger i{
+    display: none;
+}
+
+/* hero_section */
+.intro-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+    margin-top: 180px;
+}
+
+/* button_design */
+.button{
+    font-family: "Roboto";
+    border: none;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    background-size: 200% auto;
+    transition: 400ms ease-in-out;
+}
+.learn-more-btn{
+    background-image: linear-gradient(70deg,#FF8ADC 0%, #8c4fec 51%, #FF8ADC 100%);
+    padding: 11px 30px;
+    font-size: 23px;
+    border-radius: 25px;
+    font-weight: 600;
+    box-shadow: 0 0 10px #2D327B;
+}
+.learn-more-btn:hover{
+    background-position: right center;
+}
+.left-section h1{
+    font-family: "Roboto";
+    color: #424b96;
+    font-size: 70px;
+    font-weight: 700;
+    padding-bottom: 40px;
+}
+.left-section h4{
+    color: #2D327B;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 15px;
+    max-width: 280px;
+    line-height: 25px;
+    padding-bottom: 30px;
+}
+.backcover{
+    height: 750px;
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.big-p{
+    height: 650px;
+    z-index: 1;
+    position: relative;
+    margin-top: -180px;
+}
+.vector-img{
+    height: 110px;
+}
+.vector-dot{
+    height: 20px;
+}
+.vector{
+    margin-top: 250px;
+    position: absolute;
+}
+
+/* mediaquery */
+@media screen and (max-width: 1200px) {
+    .backcover{
+        height: 700px;
+    }
+    .big-p{
+        height: 600px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .backcover{
+        height: 680px;
+    }
+    .big-p{
+        height: 580px;
+        margin-left: 20px;
+    }
+    .left-section h1{
+        font-size: 65px;
+    }
+    .left-section h4{
+        font-size: 14px;
+    }
+    .learn-more-btn{
+        font-size: 21px;
+    }
+}
+@media screen and (max-width: 990px) {
+    .backcover{
+        height: 600px;
+    }
+    .big-p{
+        height: 500px;
+        margin-left: 40px;
+    }
+    .left-section{
+        margin-left: 20px;
+    }
+    .left-section h1{
+        font-size: 62px;
+    }
+    .logo img{
+        padding-left: 50px;
+    }
+    .navbar-btn button{
+        margin-right: 1px;
+    }
+}
+@media screen and (max-width: 913px) {
+    .backcover{
+        height: 650px;
+    }
+    .big-p{
+        height: 550px;
+        margin-top: -120px;
+    }
+    .left-section{
+        margin-left: 20px;
+    }
+    .left-section h1{
+        font-size: 62px;
+    }
+    .logo img{
+        padding-left: 50px;
+    }
+    .navbar-btn button{
+        margin-right: 1px;
+    }
+    body{
+        padding-bottom: 50px;
+    }
+}
+@media screen and (max-width: 831px) {
+    .backcover{
+        height: 650px;
+    }
+    .nav-items{
+        display: none;
+    }
+    .hamburger i{
+        display: inline-block;
+        float: right;
+        margin-right: 100px;
+        font-size: 22px;
+        cursor: pointer;
+        margin-top: -30px;
+        padding-left: 20px;
+    }
+    .big-p{
+        height: 550px;
+        margin-top: -120px;
+    }
+    .left-section{
+        margin-left: 20px;
+    }
+    .left-section h1{
+        font-size: 65px;
+    }
+    .logo img{
+        margin-left: -170px;
+    }
+    .navbar-btn button{
+        margin-right: -20px;
+    }
+    body{
+        padding-bottom: 50px;
+    }
+}
+@media screen and (max-width: 831px){
+    .navbar-btn button{
+        display: none;
+    }
+    .hamburger i{
+        margin-right: 70px;
+    }
+    body{
+        padding-bottom: 50px;
+    }
+}
+@media screen and (max-width: 831px){
+    .backcover{
+        height: 550px;
+    }
+    .big-p{
+        height: 480px;
+        margin-top: -180px;
+    }
+    body{
+        padding-bottom: 50px;
+    }
+}
+@media screen and (max-width: 527px){
+    .backcover{
+        height: 500px;
+    }
+    .big-p{
+        height: 450px;
+        margin-top: -180px;
+    }
+    .logo img{
+        margin-left: -135px;
+    }
+    body{
+        padding-bottom: 50px;
+    }
+}
+@media screen and (max-width: 500px){
+    .backcover{
+        height: 500px;
+    }
+    .big-p{
+        height: 380px;
+        margin-top: -180px;
+        margin-right: 60px;
+    }
+    .logo img{
+        margin-left: -135px;
+    }
+    body{
+        padding-bottom: 50px;
+    }
+}
+@media screen and (max-width: 380px){
+    .backcover{
+        height: 400px;
+    }
+    .big-p{
+        height: 300px;
+        margin-top: -150px;
+    }
+    .logo img{
+        margin-left: -105px;
+    }
+    .hamburger i{
+        margin-right: 50px;
+    }
+    .left-section h1{
+        font-size: 55px;
+    }
+    body{
+        padding-bottom: 50px;
+    }
+}
